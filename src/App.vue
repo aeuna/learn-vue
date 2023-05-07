@@ -5,11 +5,10 @@
 </template>
 
 <script lang="ts">
-import Vue, { VueConstructor } from "vue";
+import Vue from "vue";
+import { MyVueRefs } from "./types/index";
 
-export default (
-  Vue as VueConstructor<Vue & { $refs: { myChart: HTMLCanvasElement } }>
-).extend({
+export default (Vue as MyVueRefs<{ myChart: HTMLCanvasElement }>).extend({
   mounted() {
     const ctx = this.$refs.myChart;
 
