@@ -1,15 +1,17 @@
 <template>
   <div>
-    <canvas id="myChart"></canvas>
+    <canvas id="myChart" ref="myChart"></canvas>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue, { VueConstructor } from "vue";
 
-export default Vue.extend({
+export default (
+  Vue as VueConstructor<Vue & { $refs: { myChart: HTMLCanvasElement } }>
+).extend({
   mounted() {
-    const ctx = document.getElementById("myChart") as HTMLCanvasElement;
+    const ctx = this.$refs.myChart;
 
     new this.$_Chart(ctx, {
       type: "bar",
