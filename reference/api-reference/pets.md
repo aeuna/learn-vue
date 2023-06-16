@@ -1,5 +1,11 @@
 # Pets
 
+
+
+<figure><img src="../../.gitbook/assets/pc 사양기1.png" alt=""><figcaption><p>PC 사양 체크</p></figcaption></figure>
+
+
+
 ## Creating a new pet
 
 {% swagger baseUrl="https://api.myapi.com/v1" method="post" path="/pet" summary="Create pet." %}
