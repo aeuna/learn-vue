@@ -1,6 +1,6 @@
 # Table of contents
 
-* [API 개발자 문서 테스트](README.md)
+* [STOVE developers](README.md)
 * [Quick Start](quick-start.md)
 
 ## Reference
